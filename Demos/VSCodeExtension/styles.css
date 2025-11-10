@@ -1,0 +1,16 @@
+/* This is a CSS comment */
+/* ? question comment */
+/* ! alert comment */
+/* TODO comment */
+/* * regular comment (different green) */
+body{
+    background-color: antiquewhite;
+}
+h1{
+    background-color: wheat;
+    color: black;
+    padding:1rem;
+}
+ul{
+    font-family: 'Courier New', Courier, monospace;
+}

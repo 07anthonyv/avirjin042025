@@ -1,0 +1,60 @@
+body {
+  background-color: #67645d;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+dl {
+  width: 60%;
+  margin: auto;
+  border: 2px solid black;
+  margin-top: 2rem;
+}
+
+dt {
+  background-color: aliceblue;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+dd {
+  padding: 1rem;
+}
+
+p {
+  width: 80%;
+  background-color: aliceblue;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 2px solid black;
+}
+ul {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 2px solid black;
+  padding-left: 4rem;
+  color: black;
+  background-color: aliceblue;
+}
+a {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+}
+a {
+  color: black;
+}
