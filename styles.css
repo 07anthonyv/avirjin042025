@@ -76,6 +76,16 @@ blockquote + span {
   text-align: center;
   min-height: auto;
 }
+#aifooter {
+  background-color: #695453;
+  padding: 1rem;
+  min-height: auto;
+}
+
+#aifooter .container {
+  text-align: center;
+  min-height: auto;
+}
 
 #pagesubfooter {
   background-color: #252838;
