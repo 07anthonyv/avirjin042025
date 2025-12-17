@@ -17,9 +17,25 @@ body {
   min-height: auto;
 }
 #pageheader .container {
-  background-color: none;
   min-height: auto;
+}
+#pageheader nav {
   text-align: center;
+}
+#pageheader nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#pageheader nav ul li {
+  padding: 1rem;
+  border: 2px solid none;
+  background-color: #76736c;
+  margin: 2px;
+  border-radius: 10px;
+}
+#pageheader nav ul li:hover {
+  background-color: #80736c;
 }
 #logo {
   width: 6.25rem;
@@ -102,4 +118,20 @@ audio {
 }
 a {
   color: black;
+}
+@media screen and (min-width: 600px) {
+  #pageheader nav ul {
+    background-color: none;
+    margin-top: 2rem;
+  }
+
+  #pageheader nav ul li {
+    display: inline-block;
+  }
+  #pagecontent {
+    background-color: none;
+  }
+  #career {
+    background-color: none;
+  }
 }
