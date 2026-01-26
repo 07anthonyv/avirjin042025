@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox002</title>
+    <style>
+      body {
+        background-color: tomato;
+      }
+
+      h1 {
+        color: white;
+        text-align: center;
+      }
+
+      #wrapper {
+        border: 5px solid black;
+        background-color: lightblue;
+        width: 50%;
+        min-width: 600px;
+        margin: auto;
+        padding: 1rem;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: coral;
+        border: 5px solid black;
+        margin: 1rem;
+      }
+
+      #fb001 {
+        border: 8px dashed yellow;
+        margin: 1rem;
+        display: flex;
+      }
+
+      #fb002 {
+        border: 8px solid crimson;
+        margin: 1rem;
+        display: flex;
+      }
+
+      #fb003 {
+        border: 8px solid lime;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #fb004 {
+        border: 8px dotted blue;
+        margin: 1rem;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      #fb005 {
+        border: 8px solid aqua;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Flexbox002</h1>
+    <div id="wrapper">
+      <div id="fb001">
+        <div class="box">001</div>
+        <div class="box">002</div>
+      </div>
+
+      <div id="fb002">
+        <div class="box">003</div>
+        <div class="box">004</div>
+        <div class="box">005</div>
+      </div>
+
+      <div id="fb003">
+        <div class="box">006</div>
+        <div class="box">007</div>
+        <div class="box">008</div>
+        <div class="box">009</div>
+      </div>
+      <div id="fb004">
+        <div class="box">010</div>
+        <div class="box">011</div>
+        <div class="box">012</div>
+        <div class="box">013</div>
+        <div class="box">014</div>
+      </div>
+
+      <div id="fb005"><div class="box">015</div></div>
+    </div>
+  </body>
+</html>
