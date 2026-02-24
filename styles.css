@@ -1,3 +1,10 @@
+/* Mobile View - Default */
+:root {
+  --primary-color: red;
+  --secondary-color: lime;
+  --tertiary-color: blue;
+  --main-font: arial;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -9,7 +16,7 @@ body {
   min-height: 10rem;
   max-width: 75rem;
   margin: auto;
-  background-color: aliceblue;
+  background-color: white;
   padding: 1rem;
 }
 #pageheader {
@@ -39,9 +46,11 @@ body {
   background-color: #80736c;
 }
 #logo {
+  background-image: url(Images/logosmall.png);
+  background-size: cover;
   width: 6.25rem;
   height: 6.25rem;
-  background-image: url(Images/logosmall.png);
+  margin: auto;
 }
 #media {
   background-color: lightblue;
@@ -120,6 +129,7 @@ audio {
 a {
   color: black;
 }
+/* Tablet View */
 @media screen and (min-width: 600px) {
   #pageheader nav ul {
     background-color: none;
@@ -133,6 +143,12 @@ a {
     background-color: none;
   }
   #career {
+    background-color: none;
+  }
+}
+/* Desktop View */
+@media screen and (min-width: 1000px) {
+  body {
     background-color: none;
   }
 }
