@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Photo Gallery</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 2rem;
+        background-color: beige;
+      }
+      h1 {
+        text-align: center;
+      }
+      .gallery {
+        background-color: antiquewhite;
+        border: 4px solid lightgray;
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      figure {
+        background-color: white;
+        width: 100%;
+        max-width: 250px;
+        padding: 1rem;
+        margin: 1rem;
+      }
+      figcaption {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #333;
+        padding: 0.5rem;
+      }
+      img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Photo Gallery</h1>
+    <div class="gallery">
+      <figure>
+        <img
+          src="https://picsum.photos/300/300/?random=1"
+          alt="Random Picsum Image"
+        />
+        <figcaption>Random Picsum Image 1</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://picsum.photos/300/300/?random=2"
+          alt="Random Picsum Image"
+        />
+        <figcaption>Random Picsum Image 2</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://picsum.photos/300/300/?random=3"
+          alt="Random Picsum Image"
+        />
+        <figcaption>Random Picsum Image 3</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://picsum.photos/300/300/?random=4"
+          alt="Random Picsum Image"
+        />
+        <figcaption>Random Picsum Image 4</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://picsum.photos/300/300/?random=5"
+          alt="Random Picsum Image"
+        />
+        <figcaption>Random Picsum Image 5</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://picsum.photos/300/300/?random=6"
+          alt="Random Picsum Image"
+        />
+        <figcaption>Random Picsum Image 6</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://picsum.photos/300/300/?random=7"
+          alt="Random Picsum Image"
+        />
+        <figcaption>Random Picsum Image 7</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://picsum.photos/300/300/?random=8"
+          alt="Random Picsum Image"
+        />
+        <figcaption>Random Picsum Image 8</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://picsum.photos/300/300/?random=9"
+          alt="Random Picsum Image"
+        />
+        <figcaption>Random Picsum Image 9</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://picsum.photos/300/300/?random=10"
+          alt="Random Picsum Image"
+        />
+        <figcaption>Random Picsum Image 10</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>

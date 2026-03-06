@@ -1,25 +1,74 @@
-<!-- Links -->
+#  Very Simple Flexbox Notes
 
-[Yahoo](https://yahoo.com "Go to Yahoo")
+## Turn on Flexbox
 
-<!-- Images - 2 types online and local -->
+```css
+.container {
+  display: flex;
+}
+```
 
-![Chagoyan Logo](https://chsserver01.org/img/namelogo2.png "Chagoyan Logo")
+---
 
-![Markdown Logo](Images/markdownlogo.jpg "Markdown Logo")
+## Row or Column
 
-<!-- Tables -->
+```css
+.container {
+  flex-direction: row; /* left to right */
+  /* or */
+  flex-direction: column; /* top to bottom */
+}
+```
 
-| StudentID | FirstName | LastName | Grade |
-| --------- | --------- | -------- | ----- |
-| 105500    | Patrick   | Moreno   | B     |
-| 150610    | Evony     | Duran    | F     |
-| 105710    | Angel     | Carillo  | A     |
+---
 
-<!-- Table Data Alignment -->
+## Center Items
 
-| StudentID | FirstName | LastName | Grade |
-| --------: | --------- | -------- | :---: |
-|    105500 | Patrick   | Chi      |  B+   |
-|    150610 | Evony     | Story    |  F+   |
-|    105710 | Angel     | Juarez   |  A+   |
+```css
+.container {
+  display: flex;
+  justify-content: center; /* left/right */
+  align-items: center; /* up/down */
+}
+```
+
+---
+
+## Space Between Items
+
+```css
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+```
+
+---
+
+## Make Items Equal Size
+
+```css
+.item {
+  flex: 1;
+}
+```
+
+---
+
+## Allow Wrapping
+
+```css
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+```
+
+---
+
+#  Remember
+
+- `display: flex;` → start flexbox
+- `justify-content` → main direction
+- `align-items` → other direction
+- `flex: 1;` → equal space
