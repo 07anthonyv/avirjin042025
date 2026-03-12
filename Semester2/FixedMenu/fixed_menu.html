@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Menu</title>
+    <style>
+        /* Mobile First CSS */
+        html{
+            /* Temporary - Delete */
+            height: 200%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: bisque;
+            margin: 0;
+            padding: 0;
+        }
+        #pageheader {
+            background-color: lightcoral;
+            padding:1rem;
+            /* Default */
+            position: static;
+        }
+        #logo {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            display: block;
+        }
+        #fblogoheader {
+            background-color: lightpink; 
+        }
+        #pageheader h1 {
+            text-align: center;
+            color:white;
+            /* remove */
+            background-color:salmon;
+        }
+        #pageheader nav{
+            background-color:linen;
+            padding: 0.5rem;
+            border-radius: 10px;
+        }
+        #pageheader ul{
+            padding: 0.5rem;
+            list-style-type: none;
+            background-color:lightyellow;
+            /* Flexbox Component */
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        #pageheader li{
+            text-align: center;
+            border: 1px solid lightgray;
+            padding: 0.5rem;
+            background-color:lightgoldenrodyellow;
+        }
+        #pageheader a{
+            text-decoration: none;
+            color: black;
+        }
+        /* non-header elements */
+        main{
+            padding: 1rem;
+        }
+        p{
+            line-height: 1.5;
+            color:#333;
+        }
+
+        @media screen and (min-width: 650px)
+        {
+            body{
+                background-color: lightblue;
+            }
+            #pageheader{
+                position: fixed;
+                top:0px;
+                left: 0px;
+                right: 0px;
+                /* Flexbox Component */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            #fblogoheader{
+                /* flexbox component */
+                display: flex;
+                gap:1rem;
+                align-items: center;
+            }
+            #pageheader ul{
+                flex-direction: row;
+            }
+            #pageheader nav{
+                min-width: 400px;
+                justify-content: center;
+            }
+            #logo{
+                width: 80px;
+                height: 80px;
+            }
+            main{
+                /* add top padding to main content to prevent it from being hidden behind the fixed header */
+                padding-top: 200px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <header id="pageheader">
+      <!-- Start Logo and H1 -->
+      <div id="fblogoheader">
+        <img
+          src="Images/paws_logo.png"
+          alt="Paws and Whiskers Logo"
+          id="logo"
+        />
+        <h1>Paws and Whiskers</h1>
+      </div>
+      <!-- End logo and H1 -->
+
+      <!-- Start Navigation -->
+        <nav>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Pets</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">About Us</a></li>
+            </ul>
+      <!-- End Navigation -->
+    </header>
+    <main>
+        <h2>
+            Fixed Menu
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus modi est dolor aperiam. Amet corporis sint labore tenetur tempora at magni nobis eius ipsam libero incidunt praesentium error similique fugiat, facilis aliquam. Laborum ipsum qui excepturi, autem sint cumque deleniti tempore repellendus? Et esse consequuntur facere consequatur tempore commodi quos excepturi quidem quam deserunt quia magni voluptatibus quae sequi totam unde necessitatibus illum, ut ad. Cupiditate beatae aspernatur itaque architecto sed, pariatur error optio! Autem temporibus eum tempora, explicabo quia ex minima a laborum! Dolore rem laboriosam, asperiores dicta accusantium voluptatibus, accusamus nam aliquam vitae numquam ex in harum neque!
+        </p>
+    </main>
+  </body>
+</html>
