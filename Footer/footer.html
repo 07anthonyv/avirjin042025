@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Mobile First Design */
+        body{
+            background-color: #BABF94;
+            color: antiquewhite;
+            line-height: 1.7;
+            margin:0;
+        }
+        h1{
+            padding:1rem;
+            text-align: center;
+        }
+        #pagefooter{
+            border-top: 1px solid antiquewhite;
+            background-color: #A98B76;
+            padding:1rem;
+            text-align: center;
+        }
+        #pagefooter>p{
+            border:1px solid antiquewhite;
+            padding:1rem;
+        }
+        #pagefooter>article{
+            border:1px solid antiquewhite;
+            padding:1rem;
+        }
+        /* Font Awesome Styles */
+        i{
+            color:#F3E4C9;
+            font-size:1.2rem;
+            margin-left:.3rem;
+            margin-right:.3rem;
+        }
+        i.fa-paw{
+            transform: rotate(45deg);
+        }
+
+        @media screen and (min-width: 700px){
+            body{
+                background-color: #BFA28C;
+            }
+            #pagefooter{
+                display: flex;
+                justify-content: space-around;
+                text-align:center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Footer</h1>
+    <footer id="pagefooter">
+        <p>
+            <i class="fa-solid fa-paw"></i> Paws and Whiskers<br/>
+            Made with <i class="fa-solid fa-heart"></i> for furry friends 
+        </p>
+    
+    
+    <article>
+        <i class="fa-solid fa-phone"></i> 559-935-7529 </br>
+        <i class="fa-solid fa-envelope"></i> info@pawsandwhiskers.com </br>
+        <i class="fa-solid fa-map-marker-alt"></i> 750 Van Ness St., Coalinga, CA 93210
+    </article>
+    </footer>
+</body>
+</html>
