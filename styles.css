@@ -3,7 +3,6 @@
   --primary-color: red;
   --secondary-color: lime;
   --tertiary-color: blue;
-  --main-font: arial;
 }
 html {
   scroll-behavior: smooth;
@@ -151,4 +150,16 @@ a {
   body {
     background-color: none;
   }
+}
+/* Fonts */
+.rubik-dirt-regular {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+.dm-sans-variable {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
