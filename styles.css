@@ -42,7 +42,8 @@ body {
   border-radius: 10px;
 }
 #pageheader nav ul li:hover {
-  background-color: #80736c;
+  background-color: #8e5c40;
+  transition: all 2s;
 }
 #logo {
   background-image: url(Images/logosmall.png);
