@@ -9,6 +9,11 @@ html {
 }
 body {
   background-color: #67645d;
+  background-color: white;
+  padding-top: 150px;
+  background-image: url(Images/bgc.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container {
@@ -54,11 +59,13 @@ body {
 }
 #media {
   background-color: lightblue;
-  min-height: 10rem;
+  /* min-height: 10rem; */
+  height: 80vh;
   padding: 1rem;
   background-image: url(Images/hero.png);
   background-size: cover;
-  aspect-ratio: 16 / 9;
+  /* aspect-ratio: 16 / 9; */
+  background-position: center center;
 }
 blockquote {
   padding: 1rem;
